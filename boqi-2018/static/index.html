@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+    <link rel="stylesheet" href="../css/index.css">  
+    <link rel="shortcut icon" href="http://shop.boqii.com/favicon.ico">
+    <script src="../js/vue.js"></script>
+    <title>小飞波奇网-仿</title>
+</head>
+<body>
+    <!-- 1.工具栏 toolbar--开始-->
+    <div id='toolbar'>
+        <div class="toolbar_auto">
+            <div class="left">
+                <div class="collect">
+                    <span></span><a href="">收藏波奇商城</a>
+                </div>
+                <div class='city'>
+                    <span></span><span>上海</span>
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">登录</a></li>
+                    <li><a href="">注册</a></li>
+                    <li><a href="">手机版</a></li>
+                    <li><a href="">关注波奇</a></li>
+                    <li><span></span><a href="">波奇首页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 结束 -->
+    <!-- 2.header栏logo,search 开始 -->
+    <div id='header'>
+        <div class="top_auto">
+            <div class="logo_left">
+                <a href=""><img src="../image/header/logon.jpg" alt=""></a>
+            </div>
+            <div class="top_search">
+                <div class='top_search_t'>
+                    <form action="" id='top_search_submit'>
+                        <input type="text" placeholder="博纳纯天然" autofocus>
+                        <input type="submit" value="搜索">
+                    </form>
+                </div>
+                <!-- 关键词搜索推荐 -->
+                <!-- <div class="top_search_recommend">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div> -->
+                <div class="top_search-b">
+                    <span>热门搜索:</span>
+                     <a href="">进口狗粮</a>
+                     <a href="">进口猫粮</a>
+                     <a href="">猫厕所</a>
+                     <a href="">猫笼</a>
+                     <a href="">口腔护理</a>
+                     <a href="">美发护肤</a>                    
+                </div>
+            </div>
+            <div class="top_right">
+                <img src="../image/header/ad2.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 结束 -->
+    <!-- 3.导航栏nav开始 -->
+    <div id="nav">
+        <div class="nav_auto">
+            <div class="nav_left">
+                <a href="">全部商品分类</a>
+                <span></span>
+            </div>
+            <div class="nav_center">
+                <a href="" class='active'>首页</a>
+                <a href="">狗狗</a>
+                <a href="">猫猫</a>
+                <a href="">小宠</a>
+                <a href="">水族</a>
+                <a href="">全球购</a>
+                <a href="">创意生活</a>
+                <a href="">品牌馆</a>
+                <a href="">波奇服务</a>
+            </div>
+            <div class="shop_left">
+                <div class="shop_c">
+                    <div class="shop_text">
+                        <span></span>
+                        <a href="">购物车</a>
+                    </div>          
+                    <span class="ITopCatNum">0</span>
+                </div>
+                <!-- 购物车内容模块 -->
+                <div class="shop_cart none"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../js/jquery-1.11.3.js"></script>
+<script>
+    $('.nav_center').on('mouseover','a',function(){
+        $(this).addClass(`active`)
+               .siblings(':not(:first)').removeClass('active')
+    })
+    $('.nav_center').on('mouseout','a',function(){
+        
+        $(this).parent().children(':not(:first)').removeClass('active')
+    })
+</script>
+</html>
